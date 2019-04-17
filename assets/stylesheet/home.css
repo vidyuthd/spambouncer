@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  margin: 0;
+  font-family: 'Roboto Condensed', 'Teko', sans-serif;
+  background-image: linear-gradient(to left bottom, #403e65, #32314f, #24253a, #181926, #0a0a13);
+}
+ul, p, h1, h2, h3, h4 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  opacity: 0.5;
+}
+/* This Code is for PC */
+.main-container-wrapper {
+  max-width: 1824px;
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
