@@ -21,7 +21,7 @@ ul, p, h1, h2, h3, h4 {
 }
 nav {
   float: right;
-  padding: 20px 20px 0 0 ;
+  padding: 40px 20px 40px ;
 }
 .nav-links {
   color: #fff;
@@ -37,7 +37,7 @@ nav {
 }
 .main-container {
   width: 90%;
-  padding: 5%;
+  padding: 6% 5% 5%;
 }
 .text-container {
   float: left;
@@ -64,6 +64,7 @@ nav {
   padding-left: 35px;
   font-size: 20px;
 }
+
 .text-title {
   font-weight: 700;
 }
@@ -88,6 +89,7 @@ nav {
     height: auto;
     text-align: center;
   }
+
   .icons {
     padding-bottom: 40px;
   }
@@ -98,7 +100,8 @@ nav {
     display: block;
     width: 100%;
     padding-left: 0;
-  }
+    font-size: 16px;
+}
   .image-container {
     width: 80%;
     margin-top: 0;
