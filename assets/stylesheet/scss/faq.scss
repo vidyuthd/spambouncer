@@ -1,0 +1,64 @@
+.sb-faq {
+  &-main-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  &-title {
+    font-family: $title;
+    font-size: 60px;
+    text-align: center;
+  }
+  &-wrapper {
+    padding: 0 40px;
+  }
+  &-list {
+    height: auto;
+    padding: 60px 60px 0 60px;
+    color: $white;
+  }
+  &-question {
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    font-family: $text;
+    font-weight: 400;
+    transition: background-color 0.2s linear;
+  }
+  &-answer-container {
+    padding: 0 20px;
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+  &-answer {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    font-family: $text;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  &-sub-list {
+    padding: 20px;
+  }
+  &-sub-list-item {
+    line-height: 35px;
+    padding-left: 20px;
+  }
+}
+.mail {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 40px;
+  width: 100%;
+  font-weight: 600;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 80px;
+}
