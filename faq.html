@@ -3,84 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Teko" rel="stylesheet">
-  <link rel="stylesheet" href="assets/stylesheet/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Teko:300" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheet/css/application.css">
   <title>FAQ's | Spam Bouncer</title>
+  <script src="/assets/Js/toggle.js"></script>
 </head>
 <body>
-  <div class="faq-container-wrapper">
-    <nav class="nav">
-      <a href="index.html" class="nav-home">Home</a>
-    </nav>
-    <h1 class="faq-title">Here Are Our Frequently Asked Questions</h1>
-    <div class="faq-container">
-      <ol class="faq-list">
-        <li class="text-container-list-item ">
-          <p class="faq-questions">How do we enable Spam Bouncer for filtering SMS?</p>
-          <p class="faq-answers"><ul>
-            <li>Install Spam Bouncer app</li>
-            <li>Open Settings.app > Messages</li>
-            <li>Tap Unknown & Spam</li>
-            <li>Enable Spam Bouncer Extension</li>
-          </ul></p>
-        </li>
-        <li class="text-container-list-item ">
-            <p class="faq-questions">How do we report SMS using Spam Bouncer</p>
-            <p class="faq-answers"><ul>
-              <li>Open Messages.app</li>
-              <li>Open Settings.app > Messages</li>
-              <li>Tap Report all Messages</li>
-              <li>Select the message you want to report > Tap Report Button > Tap Done</li>
-              <li>Send the sms formatted for you in TRAI approved format to TRAI</li>
-            </ul></p>
-          </li>
-          <li class="text-container-list-item ">
-              <p class="faq-questions">How to Register For DND using Spam Bouncer</p>
-              <p class="faq-answers"><ul>
-                <li>Open Spam Bouncer app</li>
-                <li>Tap on Settings(Make sure you see Settings on Home Screen, if not refer to other question)</li>
-                <li>Tap Spam Reporting > Register for DND</li>
-                <li>Select yes on alert box to register for DND</li>
-                <li>Proceed and send the preformatted message to TRAI(1909)</li>
-              </ul></p>
-            </li>  
-            <li class="text-container-list-item ">
-                <p class="faq-questions">Why do I need to register for DND with TRAI?</p>
-                <p class="faq-answers">You can choose not to register for DND, its purely your own choice. Registering for DND will allow TRAI to send your preference to your telecom operator to avoid Unsolicited Commercial Communication (UCC)/ Telemarketing Calls / SMS. Once your DND preference is set, all telemarketers are required to obey your preferences within 7 days of their being set</p>
-              </li>  
-        <li class="text-container-list-item ">
-          <p class="faq-questions">What is the difference between Spam Bouncer and other Spam Filtering Apps?</p>
-          <p class="faq-answers">Most other Spam filtering apps use keyword or rulebased filtering. This is very tedious because the user needs to configure keywords and rules. This is not a scalable process as the user has to keep on updating with new keywords/rules, this is where Machine Learning comes in, it simplies the process by automating the process of predicting whether an app is SPAM or not. Very few apps use machine learning and not all can guarantee Security & Privacy, as they would need to send the incoming message/text to their server to add to their collection to improve the accuracy of filtering. Spam Bouncer uses real word messages collected from people who willingly contributed their messages as sample set to train Machine Learning models. Spam Bouncer does not use data from the app in any way whether it is keywords added or preferences saved. Everything stays on device with the user. Spam Bouncer has an amazing and intutive User Interface for the user to get started off very easily and also has lots of functionality bundled in it, like reporting SPAM message, configuring or managing keywords, iCloud Sync and registering for DND.</p>
-        </li>
-        <li class="text-container-list-item ">
-          <p class="faq-questions">What is Deny list?</p>
-          <p class="faq-answers">This is a list of all words used for determining whether an SMS should be filtered or not. If the incoming message/text contains any word which is present in this list, it would be marked as SPAM always, regardless what Machine Learning prediction is. This gives user more control for super user.</p>
-        </li>
-        <li class="text-container-list-item ">
-          <p class="faq-questions">What is Allow List?</p>
-          <p class="faq-answers">This is the opposite of Deny list, a list of all words used for determining whether an SMS should be allowed or not. If the incoming message/text contains any word which is present in this list, it would not be marked as SPAM ever, regardless what Machine Learning prediction is. This gives user more control for super user.</p>
-        </li>
-        <li class="text-container-list-item ">
-          <p class="faq-questions">What does disabling a a word in the list do and how to do it?</p>
-          <p class="faq-answers">Disabling a word in the list(allow/deny) will make the filtering logic ignore that word. In other filtering logic behaves normally as if the word is not in the list and if the word is not present in the incoming message/text to be filtering using trained model for prediction (generated by Machine learning) would be applied for prediction purpose. For disabling a word in the list
-          <ul>
-            <li>Open Spam Bouncer app</li>
-            <li>Search the word or scroll to the word > Tap the word</li>
-            <li>Select the action "Disable the word" and confirm</li>
-          </ul> 
-          </p>
-        </li>
-        <li class="text-container-list-item ">
-          <p class="faq-questions">What does delete word from the list do?</p>
-          <p class="faq-answers">Delete word from list removes the word from the list so that app will continue to predict whether the incoming message is spam or not using normal mode which is by using model(trained by Machine Learning).</p>
-        </li>
-        <li class="text-container-list-item ">
-            <p class="faq-questions">I can't go to Settings screen in Spam Bouncer app</p>
-            <p class="faq-answers">If you see a lock icon, make sure to click Settings button and then I have enabled in settings button. Then you will screen a screen which matches the screen shown in website(Home section) which has Settings</p>
-          </li>
-      </ol>
-    </div>
+<div class="sb-faq-main-container">
+  <nav class="sb-nav">
+    <a href="index.html" class="nav-home">Home</a>
+  </nav>
+  <h1 class="sb-faq-title">Here Are Our Frequently Asked Questions</h1>
+  <div class="sb-faq-wrapper">
+    <ul class="sb-faq-list">
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">1. How do we enable Spam Bouncer for filtering SMS?</button>
+        <div class="sb-faq-answer-container">
+            <ol class="sb-faq-sub-list">
+              <li class="sb-faq-sub-list-item">Install Spam Bouncer app</li>
+              <li class="sb-faq-sub-list-item">Open Settings.app > Messages</li>
+              <li class="sb-faq-sub-list-item">Tap Unknown & Spam</li>
+              <li class="sb-faq-sub-list-item">Enable Spam Bouncer Extension</li>
+            </ol>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">2. How do we report SMS using Spam Bouncer</button>
+        <div class="sb-faq-answer-container">
+            <ol class="sb-faq-sub-list">
+              <li class="sb-faq-sub-list-item">Open Messages.app</li>
+              <li class="sb-faq-sub-list-item">Open Settings.app > Messages</li>
+              <li class="sb-faq-sub-list-item">Tap Report all Messages</li>
+              <li class="sb-faq-sub-list-item">Select the message you want to report > Tap Report Button > Tap Done</li>
+              <li class="sb-faq-sub-list-item">Send the sms formatted for you in TRAI approved format to TRAI</li>
+            </ol>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">3. How to Register For DND using Spam Bouncer</button>
+        <div class="sb-faq-answer-container">
+            <ol class="sb-faq-sub-list">
+              <li class="sb-faq-sub-list-item">Open Spam Bouncer app</li>
+              <li class="sb-faq-sub-list-item">Tap on Settings(Make sure you see Settings on Home Screen, if not refer to other question)</li>
+              <li class="sb-faq-sub-list-item">Tap Spam Reporting > Register for DND</li>
+              <li class="sb-faq-sub-list-item">Select yes on alert box to register for DND</li>
+              <li class="sb-faq-sub-list-item">Proceed and send the preformatted message to TRAI(1909)</li>
+            </ol>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">4. Why do I need to register for DND with TRAI?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">You can choose not to register for DND, its purely your own choice. Registering for DND will allow TRAI to send your preference to your telecom operator to avoid Unsolicited Commercial Communication (UCC)/ Telemarketing Calls / SMS. Once your DND preference is set, all telemarketers are required to obey your preferences within 7 days of their being set</p>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">5. What is the difference between Spam Bouncer and other Spam Filtering Apps?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">Most other Spam filtering apps use keyword or rulebased filtering. This is very tedious because the user needs to configure keywords and rules. This is not a scalable process as the user has to keep on updating with new keywords/rules, this is where Machine Learning comes in, it simplies the process by automating the process of predicting whether an app is SPAM or not. Very few apps use machine learning and not all can guarantee Security & Privacy, as they would need to send the incoming message/text to their server to add to their collection to improve the accuracy of filtering. Spam Bouncer uses real word messages collected from people who willingly contributed their messages as sample set to train Machine Learning models. Spam Bouncer does not use data from the app in any way whether it is keywords added or preferences saved. Everything stays on device with the user. Spam Bouncer has an amazing and intutive User Interface for the user to get started off very easily and also has lots of functionality bundled in it, like reporting SPAM message, configuring or managing keywords, iCloud Sync and registering for DND.</p>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">6. What is Deny list?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">This is a list of all words used for determining whether an SMS should be filtered or not. If the incoming message/text contains any word which is present in this list, it would be marked as SPAM always, regardless what Machine Learning prediction is. This gives user more control for super user.</p>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">7. What is Allow List?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">This is the opposite of Deny list, a list of all words used for determining whether an SMS should be allowed or not. If the incoming message/text contains any word which is present in this list, it would not be marked as SPAM ever, regardless what Machine Learning prediction is. This gives user more control for super user.</p>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">8. What does disabling a a word in the list do and how to do it?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">Disabling a word in the list(allow/deny) will make the filtering logic ignore that word. In other filtering logic behaves normally as if the word is not in the list and if the word is not present in the incoming message/text to be filtering using trained model for prediction (generated by Machine learning) would be applied for prediction purpose. For disabling a word in the list</p>
+          <ol class="sb-faq-sub-list">
+            <li class="sb-faq-sub-list-item">Open Spam Bouncer app</li>
+            <li class="sb-faq-sub-list-item">Search the word or scroll to the word > Tap the word</li>
+            <li class="sb-faq-sub-list-item">Select the action "Disable the word" and confirm</li>
+          </ol>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">9. What does delete word from the list do?</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">Delete word from list removes the word from the list so that app will continue to predict whether the incoming message is spam or not using normal mode which is by using model(trained by Machine Learning).</p>
+        </div>
+      </li>
+      <li class="sb-faq-list-item">
+        <button class="sb-faq-question">10. I can't go to Settings screen in Spam Bouncer app</button>
+        <div class="sb-faq-answer-container">
+          <p class="sb-faq-answer">If you see a lock icon, make sure to click Settings button and then I have enabled in settings button. Then you will screen a screen which matches the screen shown in website(Home section) which has Settings</p>
+        </div>
+      </li>
+    </ul>
   </div>
   <p class="mail">If you have a Query please mail us at : <a href="mailto:support@spambouncerapp.com"> support@spambouncerapp.com </a></p>
+</div>
+<script src="assets/Js/toggle.js"></script>
 </body>
 </html>

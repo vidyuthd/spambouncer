@@ -1,0 +1,168 @@
+.sb {
+  &-main-container {
+    min-height: 100vh;
+    background: url("../../images/background2.svg");
+    background-position: 200% 38%;
+    background-size: 72%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  &-nav {
+    padding: 40px;
+
+    &-faqs {
+      float: right;
+    }
+  }
+  &-container {
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 40px auto 0;
+    padding: 20px;
+    overflow: hidden;
+  }
+  &-text-container {
+    padding-left: 40px;
+  }
+  &-title {
+    font-family: $title;
+    font-size: $fz-xlarge;
+    font-weight: 300;
+  }
+  &-sub-title {
+    font-size: 14px;
+    opacity: 0.5;
+    font-family: $text;
+    margin: -35px 0 0 40px;
+  }
+  &-description {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  &-list-item {
+    padding: 30px 0px;
+  }
+  &-icon {
+    max-width: 60px;
+    vertical-align: middle;
+    filter: invert(100%);
+  }
+  &-text {
+    width: 80%;
+    display: inline-block;
+    font-family: $text;
+    font-weight: 300;
+    line-height: 35px;
+    padding-left: 35px;
+    vertical-align: middle;
+  }
+  &-image-container {
+    position: relative;
+    text-align: center;
+  }
+  &-image-container-wrapper {
+    overflow: hidden;
+    max-width: 284px;
+    height: 105%;
+    border-radius: 48px;
+    margin: 0 auto;
+  }
+  &-phone-screen {
+    position: relative;
+    background: url("../../images/iPhone-image2.png");
+    background-size: 101%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  &-product-img-2 {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    height: 98%;
+  }
+}
+.download-button {
+  max-width: 180px;
+  padding-top: 40px;
+  margin-bottom: 80px;
+
+  &-link {
+    display: block;
+    text-align: center;
+  }
+}
+.copyright {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+// faqpage css
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 1024px) {
+//   .main-container-wrapper {
+//     height: auto;
+//     width: 100%;
+//   }
+//   .main-container {
+//     grid-template-columns: 100%;
+//     text-align: center;
+//   }
+//   .icons {
+//     display: block;
+//     margin: 0 auto;
+//     padding-bottom: 20px;
+//   }
+//   .text-container {
+//     padding: 20px;
+//   }
+//   .text-container-list {
+//     padding: 0;
+//   }
+//   .title {
+//     font-size: 60px;
+//   }
+//   .text {
+//     padding: 0;
+//     font-size: 16px;
+//     width: 100%;
+//   }
+//   .image-container {
+//     padding-right: 0px;
+//   }
+//   .product-img {
+//     max-width: 250px;
+//   }
+//   .faq-container {
+//     padding: 0 20px;
+//   }
+//   .faq-title {
+//     font-size: 44px;
+//     line-height: 48px;
+//   }
+//   .faq-list {
+//     padding: 0px;
+//   }
+//   .copyright {
+//     padding-bottom: 50px;
+//   }
+// }
+
