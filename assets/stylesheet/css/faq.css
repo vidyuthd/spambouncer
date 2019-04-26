@@ -9,10 +9,10 @@ Error: Undefined variable: "$title".
 6:   &-title {
 7:     font-family: $title;
 8:     font-size: 60px;
-9:     text-align: center;
-10:   }
-11:   &-wrapper {
-12:     padding: 0 40px;
+9:     line-height: 60px;
+10:     text-align: center;
+11:     @include for-pc {
+12: 
 
 Backtrace:
 assets/stylesheet/scss/faq.scss:7
@@ -80,4 +80,4 @@ assets/stylesheet/scss/faq.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$title\".\A         on line 7 of assets/stylesheet/scss/faq.scss\A \A 2:   &-main-container {\A 3:     max-width: 1600px;\A 4:     margin: 0 auto;\A 5:   }\A 6:   &-title {\A 7:     font-family: $title;\A 8:     font-size: 60px;\A 9:     text-align: center;\A 10:   }\A 11:   &-wrapper {\A 12:     padding: 0 40px;"; }
+  content: "Error: Undefined variable: \"$title\".\A         on line 7 of assets/stylesheet/scss/faq.scss\A \A 2:   &-main-container {\A 3:     max-width: 1600px;\A 4:     margin: 0 auto;\A 5:   }\A 6:   &-title {\A 7:     font-family: $title;\A 8:     font-size: 60px;\A 9:     line-height: 60px;\A 10:     text-align: center;\A 11:     @include for-pc {\A 12: "; }
