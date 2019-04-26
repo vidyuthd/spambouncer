@@ -1,85 +1,120 @@
 .sb {
   &-main-container {
-    min-height: 100vh;
+    width: 100%;
+    position: relative;
     background: url("../../images/background2.svg");
-    background-position: 200% 38%;
-    background-size: 72%;
-    background-attachment: fixed;
+    background-size: 200%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    @include for-pc{
+      text-align: left;
+      min-height: 100vh;
+      background-position: 200% 38%;
+      background-size: 72%;
+    }
   }
   &-nav {
     padding: 40px;
+    text-align: left;
 
     &-faqs {
       float: right;
     }
   }
   &-container {
-    max-width: 1600px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 40px auto 0;
+    grid-template-columns: 1fr;
     padding: 20px;
     overflow: hidden;
+    @include for-pc {
+      max-width: 1600px;
+      grid-template-columns: 2fr 1fr;
+      margin: 40px auto 0;
+    }
   }
   &-text-container {
-    padding-left: 40px;
+    @include for-pc {
+      padding-left: 40px;
+    }
   }
   &-title {
     font-family: $title;
     font-size: $fz-xlarge;
     font-weight: 300;
+    line-height: 70px;
+    @include for-pc{
+
+    }
   }
   &-sub-title {
     font-size: 14px;
     opacity: 0.5;
     font-family: $text;
-    margin: -35px 0 0 40px;
+    margin: 0;
+    @include for-pc{
+      margin: -5px 0 0 40px;
+    }
   }
   &-description {
+    opacity: 0.7;
     font-size: 14px;
     padding-top: 10px;
   }
+  &-list {
+    padding-top: 20px;
+  }
   &-list-item {
-    padding: 30px 0px;
+    padding: 20px 0;
+    @include for-pc {
+      padding: 30px 0px;
+    }
   }
   &-icon {
     max-width: 60px;
+    padding-bottom: 10px;
     vertical-align: middle;
     filter: invert(100%);
   }
   &-text {
-    width: 80%;
+    display: block;
     display: inline-block;
-    font-family: $text;
     font-weight: 300;
-    line-height: 35px;
-    padding-left: 35px;
-    vertical-align: middle;
+    line-height: 30px;
+    @include for-pc {
+      vertical-align: middle;
+      padding-left: 35px;
+      width: 80%;
+      font-family: $text;
+    }
+
+    &-title {
+      font-weight: 700;
+    }
   }
   &-image-container {
-    position: relative;
-    text-align: center;
-  }
-  &-image-container-wrapper {
-    overflow: hidden;
-    max-width: 284px;
-    height: 105%;
-    border-radius: 48px;
+    max-width: 300px;
+    width: 100%;
+    max-height: 610px;
+    height: 610px;
     margin: 0 auto;
   }
+
   &-phone-screen {
-    position: relative;
+    border-radius: 48px;
     background: url("../../images/iPhone-image2.png");
-    background-size: 101%;
-    height: 100%;
     background-repeat: no-repeat;
+    position: relative;
+    height: 100%;
+    background-size: 101%;
+    overflow: hidden;
   }
   &-product-img-2 {
+    width: 280%;
     position: absolute;
-    left: 0;
     z-index: -1;
-    height: 98%;
+    border-radius: 0 0 0 48px;
+    left: 0;
   }
 }
 .download-button {
@@ -93,7 +128,7 @@
   }
 }
 .copyright {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 0;
   right: 0;
@@ -101,68 +136,4 @@
   text-align: center;
   padding: 0 20px;
 }
-
-// faqpage css
-
-//
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (max-width: 1024px) {
-//   .main-container-wrapper {
-//     height: auto;
-//     width: 100%;
-//   }
-//   .main-container {
-//     grid-template-columns: 100%;
-//     text-align: center;
-//   }
-//   .icons {
-//     display: block;
-//     margin: 0 auto;
-//     padding-bottom: 20px;
-//   }
-//   .text-container {
-//     padding: 20px;
-//   }
-//   .text-container-list {
-//     padding: 0;
-//   }
-//   .title {
-//     font-size: 60px;
-//   }
-//   .text {
-//     padding: 0;
-//     font-size: 16px;
-//     width: 100%;
-//   }
-//   .image-container {
-//     padding-right: 0px;
-//   }
-//   .product-img {
-//     max-width: 250px;
-//   }
-//   .faq-container {
-//     padding: 0 20px;
-//   }
-//   .faq-title {
-//     font-size: 44px;
-//     line-height: 48px;
-//   }
-//   .faq-list {
-//     padding: 0px;
-//   }
-//   .copyright {
-//     padding-bottom: 50px;
-//   }
-// }
 

@@ -1,70 +1,98 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .sb-main-container {
-  min-height: 100vh;
+  width: 100%;
+  position: relative;
   background: url("../../images/background2.svg");
-  background-position: 200% 38%;
-  background-size: 72%;
+  background-size: 200%;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  text-align: center; }
+  @media screen and (min-width: 62em) {
+    .sb-main-container {
+      text-align: left;
+      min-height: 100vh;
+      background-position: 200% 38%;
+      background-size: 72%; } }
 .sb-nav {
-  padding: 40px; }
+  padding: 40px;
+  text-align: left; }
   .sb-nav-faqs {
     float: right; }
 .sb-container {
-  max-width: 1600px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 40px auto 0;
+  grid-template-columns: 1fr;
   padding: 20px;
   overflow: hidden; }
-.sb-text-container {
-  padding-left: 40px; }
+  @media screen and (min-width: 62em) {
+    .sb-container {
+      max-width: 1600px;
+      grid-template-columns: 2fr 1fr;
+      margin: 40px auto 0; } }
+@media screen and (min-width: 62em) {
+  .sb-text-container {
+    padding-left: 40px; } }
 .sb-title {
   font-family: "Teko";
   font-size: 83px;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 70px; }
 .sb-sub-title {
   font-size: 14px;
   opacity: 0.5;
-  font-family: "Roboto Condensed";
-  margin: -35px 0 0 40px; }
+  font-family: "Cabin Condensed";
+  margin: 0; }
+  @media screen and (min-width: 62em) {
+    .sb-sub-title {
+      margin: -5px 0 0 40px; } }
 .sb-description {
+  opacity: 0.7;
   font-size: 14px;
   padding-top: 10px; }
+.sb-list {
+  padding-top: 20px; }
 .sb-list-item {
-  padding: 30px 0px; }
+  padding: 20px 0; }
+  @media screen and (min-width: 62em) {
+    .sb-list-item {
+      padding: 30px 0px; } }
 .sb-icon {
   max-width: 60px;
+  padding-bottom: 10px;
   vertical-align: middle;
   filter: invert(100%); }
 .sb-text {
-  width: 80%;
+  display: block;
   display: inline-block;
-  font-family: "Roboto Condensed";
   font-weight: 300;
-  line-height: 35px;
-  padding-left: 35px;
-  vertical-align: middle; }
+  line-height: 30px; }
+  @media screen and (min-width: 62em) {
+    .sb-text {
+      vertical-align: middle;
+      padding-left: 35px;
+      width: 80%;
+      font-family: "Cabin Condensed"; } }
+  .sb-text-title {
+    font-weight: 700; }
 .sb-image-container {
-  position: relative;
-  text-align: center; }
-.sb-image-container-wrapper {
-  overflow: hidden;
-  max-width: 284px;
-  height: 105%;
-  border-radius: 48px;
+  max-width: 300px;
+  width: 100%;
+  max-height: 610px;
+  height: 610px;
   margin: 0 auto; }
 .sb-phone-screen {
-  position: relative;
+  border-radius: 48px;
   background: url("../../images/iPhone-image2.png");
-  background-size: 101%;
+  background-repeat: no-repeat;
+  position: relative;
   height: 100%;
-  background-repeat: no-repeat; }
+  background-size: 101%;
+  overflow: hidden; }
 .sb-product-img-2 {
+  width: 280%;
   position: absolute;
-  left: 0;
   z-index: -1;
-  height: 98%; }
+  border-radius: 0 0 0 48px;
+  left: 0; }
 
 .download-button {
   max-width: 180px;
@@ -75,7 +103,7 @@
     text-align: center; }
 
 .copyright {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   left: 0;
   right: 0;
@@ -111,29 +139,33 @@ a {
 .sb-faq-title {
   font-family: "Teko";
   font-size: 60px;
+  line-height: 60px;
   text-align: center; }
 .sb-faq-wrapper {
-  padding: 0 40px; }
+  padding: 0 20px; }
 .sb-faq-list {
-  height: auto;
-  padding: 60px 60px 0 60px;
-  color: #fff; }
+  margin-top: 20px;
+  color: #fff;
+  width: 100%; }
+  @media screen and (min-width: 62em) {
+    .sb-faq-list {
+      height: auto; } }
 .sb-faq-question {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   border: none;
+  margin: 0;
   outline: none;
   text-align: left;
   padding: 20px;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   cursor: pointer;
-  font-family: "Roboto Condensed";
+  font-family: "Cabin Condensed";
   font-weight: 400;
   transition: background-color 0.2s linear; }
 .sb-faq-answer-container {
-  padding: 0 20px;
-  font-size: 16px;
+  font-size: 14px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out; }
@@ -141,7 +173,7 @@ a {
   font-size: 16px;
   color: #fff;
   padding: 20px;
-  font-family: "Roboto Condensed";
+  font-family: "Cabin Condensed";
   font-weight: 400;
   line-height: 30px; }
 .sb-faq-sub-list {
@@ -156,7 +188,7 @@ a {
   padding-top: 40px;
   width: 100%;
   font-weight: 600;
-  font-family: 'Roboto Condensed';
+  font-family: "Cabin Condensed";
   margin-bottom: 80px; }
 
 /*# sourceMappingURL=application.css.map */
