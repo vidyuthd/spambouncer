@@ -1,28 +1,23 @@
 /*
-Error: Undefined mixin 'for-pc'.
-        on line 10 of assets/stylesheet/scss/home.scss, in `for-pc'
-        from line 10 of assets/stylesheet/scss/home.scss
+Error: Undefined variable: "$text".
+        on line 5 of assets/stylesheet/scss/home.scss
 
-5:     background: url("../../images/background2.svg");
-6:     background-size: 200%;
-7:     background-repeat: no-repeat;
-8:     background-attachment: fixed;
-9:     text-align: center;
-10:     @include for-pc{
-11:       text-align: left;
-12:       min-height: 100vh;
-13:       background-position: 200% 38%;
-14:       background-size: 72%;
-15:     }
+1: .sb {
+2:   &-main-container {
+3:     width: 100%;
+4:     position: relative;
+5:     font-family: $text;
+6:     background: url("../../images/background2.svg");
+7:     background-size: 200%;
+8:     background-repeat: no-repeat;
+9:     background-attachment: fixed;
+10:     text-align: center;
 
 Backtrace:
-assets/stylesheet/scss/home.scss:10:in `for-pc'
-assets/stylesheet/scss/home.scss:10
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+assets/stylesheet/scss/home.scss:5
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
@@ -84,4 +79,4 @@ assets/stylesheet/scss/home.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'for-pc'.\A         on line 10 of assets/stylesheet/scss/home.scss, in `for-pc'\A         from line 10 of assets/stylesheet/scss/home.scss\A \A 5:     background: url(\"../../images/background2.svg\");\A 6:     background-size: 200%;\A 7:     background-repeat: no-repeat;\A 8:     background-attachment: fixed;\A 9:     text-align: center;\A 10:     @include for-pc{\A 11:       text-align: left;\A 12:       min-height: 100vh;\A 13:       background-position: 200% 38%;\A 14:       background-size: 72%;\A 15:     }"; }
+  content: "Error: Undefined variable: \"$text\".\A         on line 5 of assets/stylesheet/scss/home.scss\A \A 1: .sb {\A 2:   &-main-container {\A 3:     width: 100%;\A 4:     position: relative;\A 5:     font-family: $text;\A 6:     background: url(\"../../images/background2.svg\");\A 7:     background-size: 200%;\A 8:     background-repeat: no-repeat;\A 9:     background-attachment: fixed;\A 10:     text-align: center;"; }
