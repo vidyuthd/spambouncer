@@ -2,6 +2,7 @@
 .sb-main-container {
   width: 100%;
   position: relative;
+  font-family: "Roboto";
   background: url("../../images/background2.svg");
   background-size: 200%;
   background-repeat: no-repeat;
@@ -39,7 +40,7 @@
 .sb-sub-title {
   font-size: 14px;
   opacity: 0.5;
-  font-family: "Cabin Condensed";
+  font-family: "Roboto";
   margin: 0; }
   @media screen and (min-width: 62em) {
     .sb-sub-title {
@@ -64,15 +65,17 @@
   display: block;
   display: inline-block;
   font-weight: 300;
-  line-height: 30px; }
+  line-height: 30px;
+  font-size: 14px; }
   @media screen and (min-width: 62em) {
     .sb-text {
       vertical-align: middle;
       padding-left: 35px;
       width: 80%;
-      font-family: "Cabin Condensed"; } }
+      font-family: "Roboto"; } }
   .sb-text-title {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 16px; }
 .sb-image-container {
   max-width: 300px;
   width: 100%;
@@ -113,7 +116,7 @@
 
 body {
   margin: 0px;
-  font-family: "Roboto Condensed", "Teko", sans-serif;
+  font-family: "Roboto", "Teko", sans-serif;
   background-image: linear-gradient(to right top, #403e65, #554271, #6d4379, #86447d, #a0437c);
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -161,10 +164,11 @@ a {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  font-family: "Cabin Condensed";
+  font-family: "Roboto";
   font-weight: 400;
   transition: background-color 0.2s linear; }
 .sb-faq-answer-container {
+  font-family: "Roboto";
   font-size: 14px;
   max-height: 0;
   overflow: hidden;
@@ -173,7 +177,7 @@ a {
   font-size: 16px;
   color: #fff;
   padding: 20px;
-  font-family: "Cabin Condensed";
+  font-family: "Roboto";
   font-weight: 400;
   line-height: 30px; }
 .sb-faq-sub-list {
@@ -188,7 +192,7 @@ a {
   padding-top: 40px;
   width: 100%;
   font-weight: 600;
-  font-family: "Cabin Condensed";
+  font-family: "Roboto";
   margin-bottom: 80px; }
 
 /*# sourceMappingURL=application.css.map */

@@ -39,6 +39,7 @@
     transition: background-color 0.2s linear;
   }
   &-answer-container {
+    font-family: $text;
     font-size: 14px;
     max-height: 0;
     overflow: hidden;
