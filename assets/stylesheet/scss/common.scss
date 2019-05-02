@@ -6,19 +6,12 @@ body {
   min-height: 100vh;
   font-weight: 400;
 }
-ul, p, h1, h2, h3, h4, a{
+ul, p, h1, h2, h3, h4, a, span, strong{
   list-style-type: none;
   text-decoration: none;
+  line-height: 28px;
   padding: $nil;
   margin: $nil;
   color: $white;
 }
 
-a {
-  opacity: 0.5;
-  transition: 0.2s ease-in;
-  &:hover {
-    opacity: 1;
-    transition: 0.2s ease-in;
-  }
-}

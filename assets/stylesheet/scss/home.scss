@@ -17,6 +17,7 @@
   }
   &-nav {
     padding: 40px;
+    font-family: $text;
     text-align: left;
 
     &-faqs {
@@ -41,26 +42,24 @@
   }
   &-title {
     font-family: $title;
-    font-size: $fz-xlarge;
-    font-weight: 300;
-    line-height: 70px;
-    @include for-pc{
-
-    }
+    font-size: 40px;
+    font-weight: 700;
   }
   &-sub-title {
     font-size: 14px;
+    line-height: 30px;
+    padding-top: 10px;
     opacity: 0.5;
     font-family: $text;
     margin: 0;
-    @include for-pc{
-      margin: -5px 0 0 40px;
+    @include for-pc {
+      padding-top: 0;
     }
   }
   &-description {
     opacity: 0.7;
+    line-height: 30px;
     font-size: 14px;
-    padding-top: 10px;
   }
   &-list {
     padding-top: 20px;
@@ -80,7 +79,6 @@
   &-text {
     display: block;
     display: inline-block;
-    font-weight: 300;
     line-height: 30px;
     font-size: 14px;
     @include for-pc {
@@ -101,6 +99,11 @@
     max-height: 610px;
     height: 610px;
     margin: 0 auto;
+    @include for-mobile {
+      margin-top: 40px;
+      max-width: 200px;
+      height: 407px;
+    }
   }
 
   &-phone-screen {
@@ -111,6 +114,10 @@
     height: 100%;
     background-size: 101%;
     overflow: hidden;
+
+    @include for-mobile {
+      border-radius: 32px;
+    }
   }
   &-product-img-2 {
     width: 280%;
@@ -118,6 +125,9 @@
     z-index: -1;
     border-radius: 0 0 0 48px;
     left: 0;
+    @include for-mobile {
+      width: 284%;
+    }
   }
 }
 .download-button {

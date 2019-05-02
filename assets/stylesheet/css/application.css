@@ -1,8 +1,107 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.link {
+  opacity: 0.5;
+  transition: 0.2s ease-in; }
+  .link:hover {
+    opacity: 1;
+    transition: 0.2s ease-in; }
+
+.padding-bottom-xsmall {
+  padding-bottom: 5px; }
+.padding-bottom-small {
+  padding-bottom: 10px; }
+.padding-bottom-medium {
+  padding-bottom: 20px; }
+.padding-bottom-large {
+  padding-bottom: 30px; }
+.padding-bottom-xlarge {
+  padding-bottom: 50px; }
+.padding-top-xsmall {
+  padding-top: 5px; }
+.padding-top-small {
+  padding-top: 10px; }
+.padding-top-medium {
+  padding-top: 20px; }
+.padding-top-large {
+  padding-top: 30px; }
+.padding-top-xxlarge {
+  padding-top: 80px; }
+.padding-left-xsmall {
+  padding-left: 5px; }
+.padding-left-small {
+  padding-left: 10px; }
+.padding-left-medium {
+  padding-left: 20px; }
+.padding-left-large {
+  padding-left: 30px; }
+.padding-right-xsmall {
+  padding-right: 5px; }
+.padding-right-small {
+  padding-right: 10px; }
+.padding-right-medium {
+  padding-right: 20px; }
+.padding-right-large {
+  padding-right: 30px; }
+
+.margin-bottom-xsmall {
+  margin-bottom: 5px; }
+.margin-bottom-small {
+  margin-bottom: 10px; }
+.margin-bottom-medium {
+  margin-bottom: 20px; }
+.margin-bottom-large {
+  margin-bottom: 30px; }
+.margin-bottom-xxlarge {
+  margin-bottom: 120px !important; }
+.margin-top-xsmall {
+  margin-top: 5px; }
+.margin-top-small {
+  margin-top: 10px; }
+.margin-top-medium {
+  margin-top: 20px; }
+.margin-top-large {
+  margin-top: 30px; }
+.margin-top-xxlarge {
+  margin-top: 80px; }
+.margin-left-xsmall {
+  margin-left: 5px; }
+.margin-left-small {
+  margin-left: 10px; }
+.margin-left-medium {
+  margin-left: 20px; }
+.margin-left-large {
+  margin-left: 30px; }
+.margin-right-xsmall {
+  margin-right: 5px; }
+.margin-right-small {
+  margin-right: 10px; }
+.margin-right-medium {
+  margin-right: 20px; }
+.margin-right-large {
+  margin-right: 30px; }
+
+.style-disc {
+  list-style-type: disc; }
+
+.fz-xsmall {
+  font-size: 12px; }
+.fz-medium {
+  font-size: 50px !important; }
+
+.text-left {
+  text-align: left; }
+.text-center {
+  text-align: center; }
+.text-right {
+  text-align: right; }
+
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
 .sb-main-container {
   width: 100%;
   position: relative;
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   background: url("../../images/background2.svg");
   background-size: 200%;
   background-repeat: no-repeat;
@@ -16,6 +115,7 @@
       background-size: 72%; } }
 .sb-nav {
   padding: 40px;
+  font-family: "Lato", sans-serif;
   text-align: left; }
   .sb-nav-faqs {
     float: right; }
@@ -33,22 +133,23 @@
   .sb-text-container {
     padding-left: 40px; } }
 .sb-title {
-  font-family: "Teko";
-  font-size: 83px;
-  font-weight: 300;
-  line-height: 70px; }
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 700; }
 .sb-sub-title {
   font-size: 14px;
+  line-height: 30px;
+  padding-top: 10px;
   opacity: 0.5;
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   margin: 0; }
   @media screen and (min-width: 62em) {
     .sb-sub-title {
-      margin: -5px 0 0 40px; } }
+      padding-top: 0; } }
 .sb-description {
   opacity: 0.7;
-  font-size: 14px;
-  padding-top: 10px; }
+  line-height: 30px;
+  font-size: 14px; }
 .sb-list {
   padding-top: 20px; }
 .sb-list-item {
@@ -64,7 +165,6 @@
 .sb-text {
   display: block;
   display: inline-block;
-  font-weight: 300;
   line-height: 30px;
   font-size: 14px; }
   @media screen and (min-width: 62em) {
@@ -72,7 +172,7 @@
       vertical-align: middle;
       padding-left: 35px;
       width: 80%;
-      font-family: "Roboto"; } }
+      font-family: "Lato", sans-serif; } }
   .sb-text-title {
     font-weight: 700;
     font-size: 16px; }
@@ -82,6 +182,11 @@
   max-height: 610px;
   height: 610px;
   margin: 0 auto; }
+  @media screen and (max-width: 35.99em) {
+    .sb-image-container {
+      margin-top: 40px;
+      max-width: 200px;
+      height: 407px; } }
 .sb-phone-screen {
   border-radius: 48px;
   background: url("../../images/iPhone-image2.png");
@@ -90,12 +195,18 @@
   height: 100%;
   background-size: 101%;
   overflow: hidden; }
+  @media screen and (max-width: 35.99em) {
+    .sb-phone-screen {
+      border-radius: 32px; } }
 .sb-product-img-2 {
   width: 280%;
   position: absolute;
   z-index: -1;
   border-radius: 0 0 0 48px;
   left: 0; }
+  @media screen and (max-width: 35.99em) {
+    .sb-product-img-2 {
+      width: 284%; } }
 
 .download-button {
   max-width: 180px;
@@ -116,32 +227,25 @@
 
 body {
   margin: 0px;
-  font-family: "Roboto", "Teko", sans-serif;
   background-image: linear-gradient(to right top, #403e65, #554271, #6d4379, #86447d, #a0437c);
   background-repeat: no-repeat;
   min-height: 100vh;
   font-weight: 400; }
 
-ul, p, h1, h2, h3, h4, a {
+ul, p, h1, h2, h3, h4, a, span, strong {
   list-style-type: none;
   text-decoration: none;
+  line-height: 28px;
   padding: 0px;
   margin: 0px;
   color: #fff; }
-
-a {
-  opacity: 0.5;
-  transition: 0.2s ease-in; }
-  a:hover {
-    opacity: 1;
-    transition: 0.2s ease-in; }
 
 .sb-faq-main-container {
   max-width: 1600px;
   margin: 0 auto; }
 .sb-faq-title {
-  font-family: "Teko";
-  font-size: 60px;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
   line-height: 60px;
   text-align: center; }
 .sb-faq-wrapper {
@@ -164,11 +268,11 @@ a {
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   transition: background-color 0.2s linear; }
 .sb-faq-answer-container {
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   max-height: 0;
   overflow: hidden;
@@ -177,7 +281,7 @@ a {
   font-size: 16px;
   color: #fff;
   padding: 20px;
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 30px; }
 .sb-faq-sub-list {
@@ -192,7 +296,27 @@ a {
   padding-top: 40px;
   width: 100%;
   font-weight: 600;
-  font-family: "Roboto";
+  font-family: "Lato", sans-serif;
   margin-bottom: 80px; }
+
+.privacypolicy-main-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  padding: 0px 60px;
+  background-color: rgba(0, 0, 0, 0.3); }
+.privacypolicy-link {
+  text-decoration: underline; }
+.privacypolicy-title {
+  font-size: 35px; }
+.privacypolicy-list-item {
+  padding: 8px 0; }
+.privacypolicy-text {
+  padding-top: 5px; }
+  @media screen and (max-width: 35.99em) {
+    .privacypolicy-text {
+      padding-left: 0; } }
+.privacypolicy-sub-title {
+  padding: 10px 0px; }
 
 /*# sourceMappingURL=application.css.map */

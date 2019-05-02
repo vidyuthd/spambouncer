@@ -1,0 +1,28 @@
+.privacypolicy {
+  &-main-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: $text;
+    padding: 0px 60px;
+    background-color: rgba(0,0,0,0.3);
+  }
+  &-link {
+    text-decoration: underline;
+  }
+  &-title {
+    font-size: 35px;
+  }
+  &-list-item {
+    padding: 8px 0;
+  }
+  &-text {
+    padding-top: 5px;
+
+    @include for-mobile {
+      padding-left: 0;
+    }
+  }
+  &-sub-title {
+    padding: 10px 0px;
+  }
+}

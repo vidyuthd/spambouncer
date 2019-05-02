@@ -13,5 +13,14 @@ $bg-gradient: linear-gradient(to right top, #403e65, #554271, #6d4379, #86447d, 
 
 // fonts
 
-$title: 'Teko';
-$text: "Roboto";
+$title: 'Lato',sans-serif;
+$text: 'Lato', sans-serif;
+
+.link {
+  opacity: 0.5;
+  transition: 0.2s ease-in;
+  &:hover {
+    opacity: 1;
+    transition: 0.2s ease-in;
+  }
+}
