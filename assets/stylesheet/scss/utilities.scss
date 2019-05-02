@@ -1,0 +1,161 @@
+.padding {
+  &-bottom {
+    &-xsmall {
+      padding-bottom: 5px;
+    }
+    &-small {
+      padding-bottom: 10px;
+    }
+    &-medium {
+      padding-bottom: 20px;
+    }
+    &-large {
+      padding-bottom: 30px;
+    }
+    &-xlarge {
+      padding-bottom: 50px;
+    }
+  }
+  &-top {
+    &-xsmall {
+      padding-top: 5px;
+    }
+    &-small {
+      padding-top: 10px;
+    }
+    &-medium {
+      padding-top: 20px;
+    }
+    &-large {
+      padding-top: 30px;
+    }
+    &-xxlarge {
+      padding-top: 80px;
+    }
+  }
+  &-left {
+    &-xsmall {
+      padding-left: 5px;
+    }
+    &-small {
+      padding-left: 10px;
+    }
+    &-medium {
+      padding-left: 20px;
+    }
+    &-large {
+      padding-left: 30px;
+    }
+  }
+  &-right {
+    &-xsmall {
+      padding-right: 5px;
+    }
+    &-small {
+      padding-right: 10px;
+    }
+    &-medium {
+      padding-right: 20px;
+    }
+    &-large {
+      padding-right: 30px;
+    }
+  }
+}
+
+.margin {
+  &-bottom {
+    &-xsmall {
+      margin-bottom: 5px;
+    }
+    &-small {
+      margin-bottom: 10px;
+    }
+    &-medium {
+      margin-bottom: 20px;
+    }
+    &-large {
+      margin-bottom: 30px;
+    }
+    &-xxlarge {
+      margin-bottom: 120px !important;
+    }
+  }
+  &-top {
+    &-xsmall {
+      margin-top: 5px;
+    }
+    &-small {
+      margin-top: 10px;
+    }
+    &-medium {
+      margin-top: 20px;
+    }
+    &-large {
+      margin-top: 30px;
+    }
+    &-xxlarge {
+      margin-top: 80px;
+    }
+  }
+  &-left {
+    &-xsmall {
+      margin-left: 5px;
+    }
+    &-small {
+      margin-left: 10px;
+    }
+    &-medium {
+      margin-left: 20px;
+    }
+    &-large {
+      margin-left: 30px;
+    }
+  }
+  &-right {
+    &-xsmall {
+      margin-right: 5px;
+    }
+    &-small {
+      margin-right: 10px;
+    }
+    &-medium {
+      margin-right: 20px;
+    }
+    &-large {
+      margin-right: 30px;
+    }
+  }
+}
+.style {
+  &-disc {
+    list-style-type: disc;
+  }
+}
+
+.fz{
+  &-xsmall {
+    font-size: 12px;
+  }
+  &-medium {
+    font-size: 50px !important;
+  }
+}
+
+.text{
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+   &-right {
+    text-align: right;
+  }
+}
+
+.border {
+  &-bottom {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}

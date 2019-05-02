@@ -1,21 +1,34 @@
 /*
-Error: Undefined variable: "$nil".
-        on line 3 of assets/stylesheet/scss/common.scss
+Error: Undefined variable: "$text".
+        on line 5 of assets/stylesheet/scss/privacy-policy.scss
 
-1: @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-2: body {
-3:   margin: $nil;
-4:   background-image: $bg-gradient;
-5:   background-repeat: no-repeat;
-6:   min-height: 100vh;
-7:   font-weight: 400;
-8: }
+1: .privacypolicy {
+2:   &-main-container {
+3:     max-width: 1280px;
+4:     margin: 0 auto;
+5:     font-family: $text;
+6:     padding: 0px 60px;
+7:     background-color: rgba(0,0,0,0.3);
+8:   }
+9:   &-link {
+10:     text-decoration: underline;
 
 Backtrace:
-assets/stylesheet/scss/common.scss:3
+assets/stylesheet/scss/privacy-policy.scss:5
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +79,4 @@ assets/stylesheet/scss/common.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$nil\".\A         on line 3 of assets/stylesheet/scss/common.scss\A \A 1: @import url(https://fonts.googleapis.com/css?family=Open+Sans);\A 2: body {\A 3:   margin: $nil;\A 4:   background-image: $bg-gradient;\A 5:   background-repeat: no-repeat;\A 6:   min-height: 100vh;\A 7:   font-weight: 400;\A 8: }"; }
+  content: "Error: Undefined variable: \"$text\".\A         on line 5 of assets/stylesheet/scss/privacy-policy.scss\A \A 1: .privacypolicy {\A 2:   &-main-container {\A 3:     max-width: 1280px;\A 4:     margin: 0 auto;\A 5:     font-family: $text;\A 6:     padding: 0px 60px;\A 7:     background-color: rgba(0,0,0,0.3);\A 8:   }\A 9:   &-link {\A 10:     text-decoration: underline;"; }
