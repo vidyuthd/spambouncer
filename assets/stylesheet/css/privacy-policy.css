@@ -9,9 +9,9 @@ Error: Undefined variable: "$text".
 5:     font-family: $text;
 6:     padding: 0px 60px;
 7:     background-color: rgba(0,0,0,0.3);
-8:   }
-9:   &-link {
-10:     text-decoration: underline;
+8:     @include for-mobile {
+9:       padding: 15px;
+10:     }
 
 Backtrace:
 assets/stylesheet/scss/privacy-policy.scss:5
@@ -79,4 +79,4 @@ assets/stylesheet/scss/privacy-policy.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text\".\A         on line 5 of assets/stylesheet/scss/privacy-policy.scss\A \A 1: .privacypolicy {\A 2:   &-main-container {\A 3:     max-width: 1280px;\A 4:     margin: 0 auto;\A 5:     font-family: $text;\A 6:     padding: 0px 60px;\A 7:     background-color: rgba(0,0,0,0.3);\A 8:   }\A 9:   &-link {\A 10:     text-decoration: underline;"; }
+  content: "Error: Undefined variable: \"$text\".\A         on line 5 of assets/stylesheet/scss/privacy-policy.scss\A \A 1: .privacypolicy {\A 2:   &-main-container {\A 3:     max-width: 1280px;\A 4:     margin: 0 auto;\A 5:     font-family: $text;\A 6:     padding: 0px 60px;\A 7:     background-color: rgba(0,0,0,0.3);\A 8:     @include for-mobile {\A 9:       padding: 15px;\A 10:     }"; }

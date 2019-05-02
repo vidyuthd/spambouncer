@@ -305,18 +305,10 @@ ul, p, h1, h2, h3, h4, a, span, strong {
   font-family: "Lato", sans-serif;
   padding: 0px 60px;
   background-color: rgba(0, 0, 0, 0.3); }
-.privacypolicy-link {
-  text-decoration: underline; }
+  @media screen and (max-width: 35.99em) {
+    .privacypolicy-main-container {
+      padding: 15px; } }
 .privacypolicy-title {
   font-size: 35px; }
-.privacypolicy-list-item {
-  padding: 8px 0; }
-.privacypolicy-text {
-  padding-top: 5px; }
-  @media screen and (max-width: 35.99em) {
-    .privacypolicy-text {
-      padding-left: 0; } }
-.privacypolicy-sub-title {
-  padding: 10px 0px; }
 
 /*# sourceMappingURL=application.css.map */
