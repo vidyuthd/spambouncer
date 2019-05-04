@@ -125,7 +125,11 @@
     z-index: -1;
     border-radius: 0 0 0 48px;
     left: 0;
+    animation: mobile-slider 8s;
+    animation-fill-mode: both;
+    animation-iteration-count : infinite;
     @include for-mobile {
+      animation: mobile-slider-m 8s;
       width: 284%;
     }
   }

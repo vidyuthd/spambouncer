@@ -1,3 +1,7 @@
+.padding-small {
+  padding: 10px; }
+.padding-medium {
+  padding: 20px; }
 .padding-bottom-xsmall {
   padding-bottom: 5px; }
 .padding-bottom-small {
@@ -8,6 +12,8 @@
   padding-bottom: 30px; }
 .padding-bottom-xlarge {
   padding-bottom: 50px; }
+.padding-bottom-xxlarge {
+  padding-bottom: 70px; }
 .padding-top-xsmall {
   padding-top: 5px; }
 .padding-top-small {
@@ -86,6 +92,8 @@
   text-align: center; }
 .text-right {
   text-align: right; }
+.text-underline {
+  text-decoration: underline; }
 
 .border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
