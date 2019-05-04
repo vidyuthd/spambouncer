@@ -1,0 +1,12 @@
+@keyframes mobile-slider {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(-550px); } }
+@keyframes mobile-slider-m {
+  from {
+    transform: translateX(0px); }
+  to {
+    transform: translateX(-370px); } }
+
+/*# sourceMappingURL=keyframes.css.map */

@@ -1,4 +1,10 @@
 .padding {
+  &-small {
+    padding: 10px;
+  }
+  &-medium {
+    padding: 20px;
+  }
   &-bottom {
     &-xsmall {
       padding-bottom: 5px;
@@ -14,6 +20,9 @@
     }
     &-xlarge {
       padding-bottom: 50px;
+    }
+    &-xxlarge {
+      padding-bottom: 70px;
     }
   }
   &-top {
@@ -151,6 +160,9 @@
   }
    &-right {
     text-align: right;
+  }
+  &-underline {
+    text-decoration: underline;
   }
 }
 
