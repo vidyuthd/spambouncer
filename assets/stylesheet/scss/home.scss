@@ -125,11 +125,17 @@
     z-index: -1;
     border-radius: 0 0 0 48px;
     left: 0;
-    animation: mobile-slider 8s;
+    animation: mobile-slider 6s ease-in-out;
     animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-direction: alternate;
     animation-iteration-count : infinite;
     @include for-mobile {
-      animation: mobile-slider-m 8s;
+      animation: mobile-slider-m 6s ease-in-out;
+      animation-fill-mode: both;
+      animation-delay: 2s;
+      animation-direction: alternate;
+      animation-iteration-count : infinite;
       width: 284%;
     }
   }

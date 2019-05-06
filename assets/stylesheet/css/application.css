@@ -212,12 +212,18 @@
   z-index: -1;
   border-radius: 0 0 0 48px;
   left: 0;
-  animation: mobile-slider 8s;
+  animation: mobile-slider 6s ease-in-out;
   animation-fill-mode: both;
+  animation-delay: 2s;
+  animation-direction: alternate;
   animation-iteration-count: infinite; }
   @media screen and (max-width: 35.99em) {
     .sb-product-img-2 {
-      animation: mobile-slider-m 8s;
+      animation: mobile-slider-m 6s ease-in-out;
+      animation-fill-mode: both;
+      animation-delay: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
       width: 284%; } }
 
 .download-button {
@@ -324,14 +330,18 @@ ul, p, h1, h2, h3, h4, a, span, strong {
   font-size: 35px; }
 
 @keyframes mobile-slider {
-  from {
-    transform: translateX(0px); }
-  to {
-    transform: translateX(-550px); } }
+  0% {
+    transform: translateX(10px); }
+  50% {
+    transform: translateX(-250px); }
+  100% {
+    transform: translateX(-530px); } }
 @keyframes mobile-slider-m {
-  from {
-    transform: translateX(0px); }
-  to {
-    transform: translateX(-370px); } }
+  0% {
+    transform: translateX(10px); }
+  50% {
+    transform: translateX(-175px); }
+  100% {
+    transform: translateX(-363px); } }
 
 /*# sourceMappingURL=application.css.map */
