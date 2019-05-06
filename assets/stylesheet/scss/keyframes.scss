@@ -1,16 +1,22 @@
 @keyframes mobile-slider {
-  from {
-    transform: translateX(0px);
+  0% {
+    transform: translateX(10px);
   }
-  to {
-    transform: translateX(-550px);
+  50% {
+    transform: translateX(-250px);
+  }
+  100% {
+    transform: translateX(-530px);
   }
 }
 @keyframes mobile-slider-m  {
-  from {
-    transform: translateX(0px);
+  0% {
+    transform: translateX(10px);
   }
-  to {
-    transform: translateX(-370px);
+  50% {
+    transform: translateX(-175px);
+  }
+  100% {
+    transform: translateX(-363px);
   }
 }
